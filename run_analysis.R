@@ -1,4 +1,4 @@
-library(reshape2)vuew
+library(reshape2)
 
 # Data download and preparation
 if(!file.exists("./data")){dir.create("./data")}
@@ -51,6 +51,7 @@ colnames(new_data_set) <- c("subject", "activity", required_features.names)
 new_data_set$activity <- factor(new_data_set$activity, levels = activity_labels[,1], labels = activity_labels[,2])
 new_data_set$subject <- as.factor(new_data_set$subject)
 
+# use melt, dcast from reshape2 package (read: http://www.r-bloggers.com/melt/, http://seananderson.ca/2013/10/19/reshape.html)
 new_data_set.melted <- melt(new_data_set, id = c("subject", "activity"))
 new_data_set.mean <- dcast(new_data_set.melted, subject + activity ~ variable, mean)
 
