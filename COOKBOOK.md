@@ -7,6 +7,7 @@ This file *COOKBOOK.md* indicate all the variables and summaries calculated, alo
 * \*Mean\* (eg. tBodyAccMeanX or tBodyGyroMeanZ) - the mean values extracted from the original files from UCI. The tBodyAcc means accelerometer data, and MeanX or MeanZ means the axis of the sensor data from the corresponding axis.
 * \*Std\* (eg. tBodyAccStdX or tBodyGyroStdZ) - the standard deviation values extracted from the original files from UCI. The tBodyAcc means accelerometer data, and StdX or StdZ means the axis of the sensor data from the corresponding axis.
   * list of these column names (a listing output from colnames(new_data_set):
+  
  [1] "subject"                      "activity"                     "tBodyAccMeanX"                "tBodyAccMeanY"               
  [5] "tBodyAccMeanZ"                "tBodyAccStdX"                 "tBodyAccStdY"                 "tBodyAccStdZ"                
  [9] "tGravityAccMeanX"             "tGravityAccMeanY"             "tGravityAccMeanZ"             "tGravityAccStdX"             
